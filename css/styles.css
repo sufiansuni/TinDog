@@ -1,28 +1,16 @@
-.body {
+body {
 	font-family: "Montserrat, sans-serif";
+	font-size: 1.5rem;
+	text-align: center;
 }
 
-.container-fluid {
-	padding: 3% 15% 7%;
-}
-
-h1 {
-	font-family: "Montserrat-Black, sans-serif";
-	font-size: 3.5rem;
-	line-height: 1.5;
-	font-weight: 900;
-}
-
-h2 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	font-family: "Montserrat-Bold, sans-serif";
-	font-weight: bold;
-	font-size: 2.8rem;
-	line-height: 1.5;
-}
-
-h3 {
-	font-family: "Montserrat-Bold, sans-serif";
-	font-weight: bold;
 }
 
 p {
@@ -49,11 +37,37 @@ p {
 	font-size: 1.2rem;
 }
 
-/* title */
-#title {
+/* Headings */
+
+.big-heading {
+	font-family: "Montserrat-Black";
+	font-size: 3.5rem;
+	line-height: 1.5;
+}
+
+.section-heading {
+	font-size: 3rem;
+	line-height: 1.5;
+}
+
+/* Containers */
+.container-fluid {
+	padding: 7% 15%;
+}
+
+/* Sections */
+
+.colored-section {
 	background-color: #ff4c68;
 	color: white;
 }
+
+.white-section {
+	background-color: white;
+	color: black;
+}
+
+/* title */
 
 .title-img {
 	width: 60%;
@@ -63,6 +77,11 @@ p {
 	z-index: 0;
 }
 
+#title .container-fluid {
+	padding: 3% 15%;
+	text-align: left;
+}
+
 /* Download Buttons */
 .download-btn {
 	margin: 5% 3% 10% 0;
@@ -70,13 +89,10 @@ p {
 
 /* Features */
 #features {
-	padding: 7% 15%;
-	background-color: white;
 	position: relative;
 }
 
 .feature-box {
-	text-align: center;
 	padding: 5%;
 }
 
@@ -93,9 +109,7 @@ p {
 /* Testimonial Section */
 
 #testimonials {
-	text-align: center;
 	background-color: #ef8172;
-	color: white;
 	position: relative;
 }
 
@@ -105,13 +119,17 @@ p {
 	margin: 20px;
 }
 
+.testimonial-text {
+	font-size: 3rem;
+	line-height: 1.5;
+}
+
 .carousel-item {
 	padding: 7% 15%;
 }
 
 #press {
 	background-color: #ef8172;
-	text-align: center;
 	padding-bottom: 3%;
 }
 
@@ -123,45 +141,30 @@ p {
 /* Pricing Section */
 #pricing {
 	padding: 100px;
-	text-align: center;
 }
 
 .pricing-column {
 	padding: 3% 2%;
 }
 
-#cta {
-	background-color: #ff4c68;
-	color: white;
-	text-align: center;
-	padding: 7% 15%;
-}
-
-#cta h3{
-	font-family: "Montserrat-Black, sans-serif";
-	font-size: 3.5rem;
+.price-text {
+	font-size: 3rem;
 	line-height: 1.5;
 }
 
-#footer {
-	padding: 7% 15%;
-	background-color:white;
-	color: black;
-	text-align: center;
-}
+/* Footer */
 
 #footer a {
-	color: black;
+	color: #ef8172;
 	font-size: 20px;
 }
 
 #footer a:hover {
-	color: #ef8172;
+	color: #ff4c68;
 }
 
-@media (max-width: 1000px) {
-
-	#title {
+@media (max-width: 1023px) {
+	#title .container-fluid{
 		text-align: center;
 	}
 
