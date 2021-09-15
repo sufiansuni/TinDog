@@ -3,7 +3,7 @@
 }
 
 .container-fluid {
-	padding: 3% 15%;
+	padding: 3% 15% 7%;
 }
 
 h1 {
@@ -58,7 +58,9 @@ p {
 .title-img {
 	width: 60%;
 	transform: rotate(25deg);
-	margin-left: 15%;
+	right: 30%;
+	position: absolute;
+	z-index: 0;
 }
 
 /* Download Buttons */
@@ -69,6 +71,8 @@ p {
 /* Features */
 #features {
 	padding: 7% 15%;
+	background-color: white;
+	position: relative;
 }
 
 .feature-box {
@@ -92,6 +96,7 @@ p {
 	text-align: center;
 	background-color: #ef8172;
 	color: white;
+	position: relative;
 }
 
 .testimonial-image {
@@ -123,4 +128,45 @@ p {
 
 .pricing-column {
 	padding: 3% 2%;
+}
+
+#cta {
+	background-color: #ff4c68;
+	color: white;
+	text-align: center;
+	padding: 7% 15%;
+}
+
+#cta h3{
+	font-family: "Montserrat-Black, sans-serif";
+	font-size: 3.5rem;
+	line-height: 1.5;
+}
+
+#footer {
+	padding: 7% 15%;
+	background-color:white;
+	color: black;
+	text-align: center;
+}
+
+#footer a {
+	color: black;
+	font-size: 20px;
+}
+
+#footer a:hover {
+	color: #ef8172;
+}
+
+@media (max-width: 1000px) {
+
+	#title {
+		text-align: center;
+	}
+
+	.title-img {
+		position: static;
+		transform: rotate(0deg);
+	}
 }
